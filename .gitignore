@@ -1,6 +1,6 @@
 .vscode/*
 .databricks
-uv.lock
+# uv.lock
 .devcontainer
 .DS_Store
 src/*.egg-info
