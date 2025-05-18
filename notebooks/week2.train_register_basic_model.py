@@ -7,6 +7,7 @@ from house_price.config import ProjectConfig, Tags
 from house_price.models.basic_model import BasicModel
 
 from dotenv import load_dotenv
+import os
 from marvelous.common import is_databricks
 
 # COMMAND ----------
