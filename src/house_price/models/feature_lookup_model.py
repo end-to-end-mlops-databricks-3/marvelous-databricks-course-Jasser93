@@ -27,7 +27,7 @@ class FeatureLookUpModel:
         """Initialize the model with project configuration."""
         self.config = config
         self.spark = spark
-        self.workspace = WorkspaceClient()
+        #self.workspace = WorkspaceClient()
         self.fe = feature_engineering.FeatureEngineeringClient()
 
         # Extract settings from the config
