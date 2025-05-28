@@ -1,6 +1,9 @@
 # Databricks notebook source
 # MAGIC %pip install house_price-1.0.1-py3-none-any.whl
 
+# MAGIC %pip install -e ..
+# MAGIC %pip install git+https://github.com/end-to-end-mlops-databricks-3/marvelous@0.1.0
+
 # COMMAND ----------
 
 # MAGIC %restart_python
