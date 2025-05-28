@@ -1,12 +1,19 @@
 # Databricks notebook source
-# MAGIC %pip install house_price-1.0.1-py3-none-any.whl
+# %pip install house_price-1.0.1-py3-none-any.whl
 
-# MAGIC %pip install -e ..
-# MAGIC %pip install git+https://github.com/end-to-end-mlops-databricks-3/marvelous@0.1.0
+%pip install -e ..
+%pip install git+https://github.com/end-to-end-mlops-databricks-3/marvelous@0.1.0
 
 # COMMAND ----------
 
 # MAGIC %restart_python
+
+# COMMAND ----------
+
+from pathlib import Path
+import sys
+sys.path.append(str(Path.cwd().parent / 'src'))
+
 
 # COMMAND ----------
 
@@ -99,4 +106,5 @@ predictions = fe_model.load_latest_model_and_predict(X_test)
 logger.info(predictions)
 
 # COMMAND ----------
+
 
