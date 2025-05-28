@@ -5,7 +5,7 @@ from datetime import datetime
 import mlflow
 from databricks import feature_engineering
 from databricks.feature_engineering import FeatureFunction, FeatureLookup
-#from databricks.sdk import WorkspaceClient
+from databricks.sdk import WorkspaceClient
 from lightgbm import LGBMRegressor
 from loguru import logger
 from mlflow.models import infer_signature
@@ -27,7 +27,7 @@ class FeatureLookUpModel:
         """Initialize the model with project configuration."""
         self.config = config
         self.spark = spark
-        #self.workspace = WorkspaceClient()
+        self.workspace = WorkspaceClient()
         self.fe = feature_engineering.FeatureEngineeringClient()
 
         # Extract settings from the config
