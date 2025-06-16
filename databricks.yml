@@ -5,9 +5,9 @@
 bundle:
   name: marvelous-databricks-course-Jasser93
 
-include:
-  - bundle_monitoring.yml
-  - resources/*.yml
+# include:
+#  - bundle_monitoring.yml
+#  - resources/*.yml
 
 
 artifacts:
